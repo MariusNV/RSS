@@ -29,12 +29,21 @@ var actor1 = Ti.UI.createView({
 	top: 540
 });
 
+//Create Data
+var tableData = [ {title: 'Apples'}, {title: 'Bananas'}, {title: 'Carrots'}, {title: 'Potatoes'} ];
 
+//Create Table for the Data
+var table = Ti.UI.createTableView({
+  data: tableData,
+  width: '100%'
+});
 
+//Add the Table to the ScrollView
+scrollView.add(table);
 
 //Add the Views to the ScrollViews
-scrollView.add(actor);
-scrollView.add(actor1);
+//scrollView.add(actor);
+//scrollView.add(actor1);
 
 //Add the ScrollView to the Window
 homePage.add(scrollView);
