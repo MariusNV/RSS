@@ -1,52 +1,7 @@
-//Create Window.
-var homePage = Titanium.UI.createWindow({
-	backgroundColor: 'white'
-	});
-
-//Create ScrollView
-var scrollView = Ti.UI.createScrollView({
-  contentWidth: 'auto',
-  contentHeight: 'auto',
-  showVerticalScrollIndicator: true,
-  showHorizontalScrollIndicator: false,
-  height: '100%',
-  width: '100%'
+Ti.UI.setBackgroundColor('#F8F8F8');
+var win1 = require('getXML');
+var XMLWin = win1({
+	title: 'XML',
+	weekNo:'12'
 });
-
-
-
-//Create View
-var actor = Ti.UI.createView({
-	backgroundColor: 'red',
-	width: 500,
-	height: 500,
-	top: 20
-});
-var actor1 = Ti.UI.createView({
-	backgroundColor: 'blue',
-	width: 500,
-	height: 500,
-	top: 540
-});
-
-//Create Data
-var tableData = [ {title: 'Apples'}, {title: 'Bananas'}, {title: 'Carrots'}, {title: 'Potatoes'} ];
-
-//Create Table for the Data
-var table = Ti.UI.createTableView({
-  data: tableData,
-  width: '100%'
-});
-
-//Add the Table to the ScrollView
-scrollView.add(table);
-
-//Add the Views to the ScrollViews
-//scrollView.add(actor);
-//scrollView.add(actor1);
-
-//Add the ScrollView to the Window
-homePage.add(scrollView);
-
-//Open Window
-homePage.open();
+XMLWin.open();

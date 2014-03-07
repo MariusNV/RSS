@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=RSS
+iosLaunchConfigurationAttributes/appid=com.mide765.rss
+iosLaunchConfigurationAttributes/certificate=Marius Vaduva (W6VTFNBX5R)
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/sdk_version=7.0.3
+iosLaunchConfigurationAttributes/uuid=459C87F7-165F-4609-8C6B-A72513882B74
+provisioning_profiles/development/40F1A288-BBC4-452D-B48F-0F73022C62A8/appid=com.mide765.NeverBoredrfc1034identifier
+provisioning_profiles/development/40F1A288-BBC4-452D-B48F-0F73022C62A8/name=iOS Team Provisioning Profile\: com.mide765.NeverBoredrfc1034identifier
+provisioning_profiles/development/40F1A288-BBC4-452D-B48F-0F73022C62A8/uuid=40F1A288-BBC4-452D-B48F-0F73022C62A8
+provisioning_profiles/development/459C87F7-165F-4609-8C6B-A72513882B74/appid=*
+provisioning_profiles/development/459C87F7-165F-4609-8C6B-A72513882B74/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/459C87F7-165F-4609-8C6B-A72513882B74/uuid=459C87F7-165F-4609-8C6B-A72513882B74
+provisioning_profiles/development/6BF29434-ABFC-4314-AEC1-60F003F5E4FC/appid=*
+provisioning_profiles/development/6BF29434-ABFC-4314-AEC1-60F003F5E4FC/name=HelloMihai
+provisioning_profiles/development/6BF29434-ABFC-4314-AEC1-60F003F5E4FC/uuid=6BF29434-ABFC-4314-AEC1-60F003F5E4FC
