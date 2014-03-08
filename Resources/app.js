@@ -1,21 +1,35 @@
+//Create tabGroup in order to have a header
+var tabGroup = Ti.UI.createTabGroup();
+
+var myOnlyWin = Ti.UI.createWindow({
+    backgroundColor: '#FFF',
+    title:'Stiri',
+    height: '44',
+    tabBarHidden:true
+});
+ 
+//Hide the unused tabs 
+var tab = Ti.UI.createTab({
+    title:"Doesn't matter",
+    window: myOnlyWin
+});
+
+
 var win = Ti.UI.createWindow();
 
-var view = Ti.UI.createView();
+var view = Ti.UI.createView({
+	top: '64'
+	
+});
+
 
 var table = Ti.UI.createTableView();
 
-var homeTitle = Ti.UI.createLabel({
-	color : '#999',
-	text : 'Stiri',
-	font : {
-		fontSize : 20,
-		fontfamily : 'Arial'
-	}
-});
-
+//Table -> View. Tab and View -> tabGroup.
 view.add(table);
-win.add(homeTitle);
-win.add(view);
+tabGroup.addTab(tab);
+
+tabGroup.add(view);
 
 var url = "http://realitatea.feedsportal.com/c/32533/fe.ed/rss.realitatea.net/stiri.xml", data = [];
 
@@ -53,4 +67,5 @@ var xhr = Ti.Network.createHTTPClient({
 xhr.open('GET', url);
 xhr.send();
 
-win.open(); 
+//Show tabGroup
+tabGroup.open();
